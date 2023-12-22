@@ -87,6 +87,10 @@ class ListenableNode extends Node
     _notifyListeners();
     _notifyNodesAdded(NodeAddEvent(List.from([value])));
   }
+  
+  void notify() {
+    _notifyListeners();
+  }
 
   /// Add a collection of [Iterable] nodes to [this] node
   ///
